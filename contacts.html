@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>BiserBags — Контакты</title>
+
+  <meta name="description" content="Свяжитесь с Марией для заказа бисерной сумки. Instagram, Telegram, WhatsApp, Email.">
+  <meta name="keywords" content="контакты, заказать сумку, Мария, бисерные сумки">
+  <meta name="author" content="Мария">
+  <meta name="theme-color" content="#0a0a0a">
+
+  <meta property="og:title" content="BiserBags — Контакты">
+  <meta property="og:description" content="Свяжитесь со мной для заказа уникальной бисерной сумки.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/icon-512.png">
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="assets/images/favicon.png">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contacts.css">
+</head>
+<body>
+  <!-- Звёздный фон -->
+  <canvas id="starfield"></canvas>
+  <div id="particles"></div>
+
+  <!-- ХЕДЕР -->
+  <header class="header">
+    <a href="index.html" class="logo">✦ Biser<span>Bags</span></a>
+    <nav class="nav">
+      <a href="index.html">Главная</a>
+      <a href="catalog.html">Каталог</a>
+      <a href="about.html">О мастере</a>
+      <a href="contacts.html" class="active">Контакты</a>
+    </nav>
+  </header>
+
+  <!-- КОНТАКТЫ -->
+  <main class="contacts-page">
+    <div class="contacts-header">
+      <h1>Связь со <span>мной</span></h1>
+      <p>Буду рада ответить на ваши вопросы и принять заказ</p>
+    </div>
+
+    <div class="contacts-grid">
+      <div class="contact-card">
+        <div class="contact-icon">✦</div>
+        <h3>Instagram</h3>
+        <p>@maria_biserbags</p>
+        <p class="contact-desc">Все мои работы и процесс создания</p>
+        <a href="#" class="btn-neon btn-small">Перейти</a>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon">✦</div>
+        <h3>Telegram</h3>
+        <p>@maria_biser</p>
+        <p class="contact-desc">Быстрый способ связаться со мной</p>
+        <a href="#" class="btn-neon btn-small">Написать</a>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon">✦</div>
+        <h3>WhatsApp</h3>
+        <p>+7 (999) 123-45-67</p>
+        <p class="contact-desc">Для срочных вопросов и заказов</p>
+        <a href="#" class="btn-neon btn-small">Написать</a>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon">✦</div>
+        <h3>Email</h3>
+        <p>maria@biserbags.ru</p>
+        <p class="contact-desc">Для деловых предложений</p>
+        <a href="#" class="btn-neon btn-small">Написать</a>
+      </div>
+    </div>
+
+    <!-- ФОРМА ОБРАТНОЙ СВЯЗИ -->
+    <div class="contact-form-section">
+      <h2>Оставьте <span>сообщение</span></h2>
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label for="name">Имя *</label>
+          <input type="text" id="name" placeholder="Ваше имя" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" placeholder="Ваш email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Телефон</label>
+          <input type="tel" id="phone" placeholder="+7 (999) 123-45-67">
+        </div>
+        <div class="form-group">
+          <label for="message">Сообщение *</label>
+          <textarea id="message" rows="5" placeholder="Что вы хотели бы заказать?" required></textarea>
+        </div>
+        <button type="submit" class="btn-neon">Отправить сообщение</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- ПОДВАЛ -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">✦ BiserBags</div>
+      <p>Ручные бисерные сумки от Марии</p>
+      <div class="social-links">
+        <a href="#" class="social-link">Instagram</a>
+        <a href="#" class="social-link">Telegram</a>
+        <a href="#" class="social-link">VK</a>
+        <a href="#" class="social-link">Pinterest</a>
+      </div>
+      <p class="copyright">© 2026 BiserBags. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <!-- ПОДКЛЮЧЕНИЕ СКРИПТОВ -->
+  <script src="script.js"></script>
+</body>
+</html>

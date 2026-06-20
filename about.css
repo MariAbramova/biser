@@ -1,0 +1,235 @@
+/* ===== СТИЛИ ДЛЯ СТРАНИЦЫ О МАСТЕРЕ ===== */
+
+.about-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 48px 60px;
+  position: relative;
+  z-index: 2;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.about-header h1 span {
+  color: var(--silver-color);
+}
+
+/* ===== КОНТЕНТ ===== */
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 50px;
+  margin-bottom: 60px;
+  align-items: start;
+}
+
+.about-image {
+  position: relative;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  object-fit: cover;
+}
+
+.about-badge {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--silver-color);
+  color: var(--bg-primary);
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.about-text h2 {
+  font-size: 28px;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.about-text p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.about-text h3 {
+  font-size: 20px;
+  color: var(--text-primary);
+  margin: 24px 0 12px;
+}
+
+.principles {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 24px;
+}
+
+.principles li {
+  padding: 8px 0;
+  color: var(--text-secondary);
+  font-size: 15px;
+  border-bottom: 1px solid var(--border-color);
+  transition: var(--transition);
+}
+
+.principles li:hover {
+  color: var(--text-primary);
+  padding-left: 8px;
+}
+
+.principles li:last-child {
+  border-bottom: none;
+}
+
+.about-text .btn-neon {
+  margin-top: 8px;
+}
+
+/* ===== ДОСТИЖЕНИЯ ===== */
+.achievements {
+  margin-top: 20px;
+}
+
+.achievements h2 {
+  text-align: center;
+  font-size: 28px;
+  color: var(--text-primary);
+  margin-bottom: 32px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.achievements h2 span {
+  color: var(--silver-color);
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.achievement-item {
+  text-align: center;
+  padding: 30px 20px;
+  background: var(--bg-card);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  transition: var(--transition);
+}
+
+.achievement-item:hover {
+  border-color: var(--silver-color);
+  transform: translateY(-4px);
+}
+
+.achievement-number {
+  display: block;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--silver-color);
+  margin-bottom: 8px;
+}
+
+.achievement-label {
+  font-size: 14px;
+  color: var(--text-secondary);
+  letter-spacing: 1px;
+}
+
+/* ===== АДАПТИВНОСТЬ ===== */
+@media (max-width: 1024px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .about-image {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .achievements-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    padding: 80px 20px 40px;
+  }
+
+  .about-header h1 {
+    font-size: 28px;
+  }
+
+  .about-text h2 {
+    font-size: 24px;
+  }
+
+  .about-text h3 {
+    font-size: 18px;
+  }
+
+  .achievements h2 {
+    font-size: 24px;
+  }
+
+  .achievement-number {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-page {
+    padding: 70px 16px 30px;
+  }
+
+  .about-header h1 {
+    font-size: 24px;
+  }
+
+  .about-image {
+    max-width: 100%;
+  }
+
+  .about-badge {
+    font-size: 12px;
+    padding: 6px 16px;
+    bottom: -12px;
+  }
+
+  .achievements-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .achievement-item {
+    padding: 20px;
+  }
+
+  .achievement-number {
+    font-size: 24px;
+  }
+}
